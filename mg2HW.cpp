@@ -30,7 +30,7 @@ const unsigned char rowPin[NUMBER_OF_ROWS]={DIGIT_1_PIN,DIGIT_2_PIN,DIGIT_3_PIN,
 //const unsigned char row[5]={ ROW_1_PIN,ROW_2_PIN,ROW_3_PIN,ROW_4_PIN,ROW_5_PIN };
 const unsigned char rgbPin[3]={LED_R_PIN,LED_G_PIN,LED_B_PIN};
 
-PROGMEM prog_char knobPin[NUMBER_OF_KNOBS]={KNOB_PIN_1,KNOB_PIN_2,KNOB_PIN_3,KNOB_PIN_4};
+const char knobPin[NUMBER_OF_KNOBS] PROGMEM ={KNOB_PIN_1,KNOB_PIN_2,KNOB_PIN_3,KNOB_PIN_4};
 
 
 /*
@@ -56,13 +56,13 @@ const unsigned char segments[8]={
 #define WHITE_BITS 7
 
 
-prog_uchar colorBit[NUMBER_OF_COLORS] PROGMEM = {  
+const char colorBit[NUMBER_OF_COLORS] PROGMEM = {  
 
 BLACK_BITS, RED_BITS,GREEN_BITS,BLUE_BITS,YELLOW_BITS,MAGENTA_BITS,CIAN_BITS,WHITE_BITS
 
 };
 enum BitOrder {LSB_FIRST,MSB_FIRST};
-PROGMEM prog_uchar typo[40]={
+const char typo[40] PROGMEM ={
   B00111111, //0
   B00000110, //1
   B01011011, //2

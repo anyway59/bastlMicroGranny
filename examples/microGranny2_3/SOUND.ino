@@ -24,7 +24,7 @@ unsigned char lfoAmt;
 boolean reverse;
 long granularTime;
 uint32_t sizeOfFile;
-PROGMEM prog_uint16_t usefulLengths[17]={
+const uint16_t usefulLengths[17] PROGMEM ={
   0,1,2,3,6,12,24/*doba*/,48/*2d*/,72/*3d*/,96/*4d*/,144/*6d*/,192/*8d*/,288/*12d*/,384/*16d*/,576/*24d*/,768/*32d*/,24000};
 
 

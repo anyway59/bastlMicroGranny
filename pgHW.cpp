@@ -54,7 +54,7 @@ for Standuino wwww.standuino.eu
 //const unsigned char row[5]={ ROW_1_PIN,ROW_2_PIN,ROW_3_PIN,ROW_4_PIN,ROW_5_PIN };
 const unsigned char rgbPin[3]={LED_R_PIN,LED_G_PIN,LED_B_PIN};
 
-PROGMEM prog_char KnobPin[3]={KNOB_PIN_1,KNOB_PIN_2, CV_PIN};
+const char KnobPin[3] PROGMEM ={KNOB_PIN_1,KNOB_PIN_2, CV_PIN};
 //const uint8_t KnobPin[3]={KNOB_PIN_1,KNOB_PIN_2, CV_PIN};
 
 
@@ -81,13 +81,13 @@ const unsigned char segments[8]={
 #define WHITE_BITS 7
 
 
-prog_uchar ColorBit[NUMBER_OF_COLORS] PROGMEM = {  
+const char ColorBit[NUMBER_OF_COLORS] PROGMEM = {  
 
 BLACK_BITS, RED_BITS,GREEN_BITS,BLUE_BITS,YELLOW_BITS,MAGENTA_BITS,CIAN_BITS,WHITE_BITS
 
 };
 enum BitOrder {LSB_FIRST,MSB_FIRST};
-PROGMEM prog_uchar Typo[53]={
+const char Typo[53] PROGMEM ={
   B00111111, //0
   B00000110, //1
   B01011011, //2

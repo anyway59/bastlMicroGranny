@@ -1,6 +1,6 @@
 
 
-PROGMEM prog_uint16_t clearTo[]={
+const uint16_t clearTo[] PROGMEM ={
   877, 0, 0,0,  0,128,0,1022, 13 , 82,54};
 /*
 //13 = 1011 -  sync ON, shiftDir OFF,tuned ON,repeat ON, 
@@ -28,7 +28,7 @@ PROGMEM prog_uint16_t clearTo[]={
 
 
 #define VARIABLES_PER_PAGE 4
-PROGMEM prog_char labels[]={
+const char labels[] PROGMEM ={
   "rcargmse"};
 
 #define RATE 0 //1024 - 10 R
@@ -75,7 +75,7 @@ PROGMEM prog_char labels[]={
 #define KNOB_BITS 10
 
 
-PROGMEM prog_uint16_t maxValue[]={
+const uint16_t maxValue[] PROGMEM ={
   1023,127,127,127, 127,255,1023,1023,63 ,127,127}; //const //127,127,7,15,3
 
 

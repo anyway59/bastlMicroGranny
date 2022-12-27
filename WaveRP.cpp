@@ -671,7 +671,7 @@ bool WaveRP::record(SdBaseFile* file, uint16_t rate, uint8_t pin, uint8_t ref) {
 }
 //------------------------------------------------------------------------------
 #if DVOLUME || defined(__DOXYGEN__)
-static uint8_t dbToMult[] PROGMEM = {
+const static uint8_t dbToMult[] PROGMEM = {
   0, 228, 203, 181, 162, 144, 128, 114, 102, 91, 81, 72, 64, 57, 51, 46, 41,
   36, 32, 29, 26, 23, 20, 18, 16, 14, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 /** Set volume factor
